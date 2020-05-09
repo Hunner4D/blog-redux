@@ -9,7 +9,7 @@ import jsonPlaceholder from "../apis/jsonPlaceholder";
 //   };
 // };
 
-//          same code above cleaned up w es6
+//       same code above cleaned up w es6
 export const fetchPosts = () => async (dispatch) => {
   const response = await jsonPlaceholder.get("./posts");
 
