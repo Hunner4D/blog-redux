@@ -7,11 +7,15 @@ import thunk from "redux-thunk";
 import App from "./components/App";
 import reducers from "./reducers";
 
-const store = createStore(reducers, applyMiddleware(thunk));
+// A store is the library which holds "x" amount of states (reducers)
+// const store = createStore(reducers, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <Provider store={store}>
+  // after creating a store, we must make sure to "provide" it to
+  // our parent 
+  // <Provider store={store}>
     <App />
-  </Provider>,
+  // </Provider>
+  ,
   document.querySelector("#root")
 );
